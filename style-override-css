@@ -1,0 +1,62 @@
+/* importing open sans font  */
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+
+/* setting global vars  */
+:root {
+	--green: #2A5A39;
+	--button-color: #ffffff;
+	--row-hover-color: #f1f1f1;
+	--display-style: inline-block;
+	--outline-new: 0px;
+    --logo-image: url(https://www.wiley.com/medias/Wiley-Logo-White.png?context=bWFzdGVyfGltYWdlc3w3NDUzfGltYWdlL3BuZ3xzeXMtbWFzdGVyL2ltYWdlcy9oMTYvaDUwLzg4ODM2Nzk3MjM1NTAvV2lsZXkgTG9nbyBXaGl0ZS5wbmd8Y2IxYmY3M2IyNzE0NTk3NzM1ZjEzYTk5YTQ5YjUzNzE0ZTMzYTcxYmViMjBmMGUwNGU4YjEwZTYwMTYwOGU0Zg);
+}
+
+/* applying new font to Skin container component*/
+.Skin {
+	font-family: 'Open Sans', sans-serif!important;
+}
+
+.Skin #LogoContainer {
+	display: var(--display-style)!important;
+}
+
+/* changing radio boxes and outlines to green, setting logo with width and height */
+
+.Skin #Logo {
+	display: var(--display-style)!important;
+	background-image: var(--logo-image);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 140px;
+    margin-left: -1.2em;
+    border-color: var(--green)!important;
+}
+
+.Skin label.q-radio.q-checked.q-focused {
+    border-color: var(--green)!important;
+    background: var(--green)!important;
+}
+
+.Skin label.q-radio.q-checked {
+	border-color: var(--green)!important;
+    background-color: var(--green)!important;
+    outline: var(--outline-new);
+}
+
+.Skin label.q-radio.q-checked {
+	border-color: var(--green)!important;
+    background-color: var(--green)!important;
+    outline: var(--outline-new);
+}
+
+/* changing button background and color  */
+.Button {
+	background-color: var(--green)!important;
+	color: var(--button-color)!important;
+}
+
+/* changing table row hover color  */
+.Skin .CS .VRTL li:hover, .Skin .Choice:hover, .Skin .ChoiceRow:hover, .Skin .RO .RB tr:hover {
+    background: var(--row-hover-color)!important;
+}
